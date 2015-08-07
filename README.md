@@ -60,7 +60,7 @@ browserify()
 $ browserify main.js -p [amd-noconflictify] > bundle.js
 ```
 
-# Options
+## Options
 
 There is no options.
 
