@@ -25,5 +25,5 @@
     "amd",
     "browserify",
     "browserify-plugin"
-  ],
+  ]
 }
