@@ -22,14 +22,14 @@ This plugin fixes it by disabling a possible detected AMD module loader environm
 ```js
 (function(undefined) {
   if (typeof define === 'function' && define.amd) {
-    var idzPreviousDefine = define;
+    var __amdnoconflictify__ = define;
     define = undefined;
   }
 
   // your code here
 
-  if (idzPreviousDefine) {
-    define = idzPreviousDefine;
+  if (__amdnoconflictify__) {
+    define = __amdnoconflictify__;
   }
 })();
 ```
