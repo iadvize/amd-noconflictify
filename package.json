@@ -1,0 +1,29 @@
+{
+  "name": "amd-noconflictify",
+  "description": "Browserify plugin for avoiding that libraries register themselves as AMD modules.",
+  "version": "0.1.0",
+  "author": "iAdvize Team",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/iadvize/amd-noconflictify.git"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "engines": {
+    "node": ">= 0.10"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "through2": "2.0.0"
+  },
+  "peerDependencies": {
+    "browserify": ">= 10"
+  },
+  "keywords": [
+    "amd",
+    "browserify",
+    "browserify-plugin"
+  ]
+}
