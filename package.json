@@ -1,6 +1,6 @@
 {
   "name": "amd-noconflictify",
-  "description": "Browserify plugin aiming to avoid conflicts with libraries autoexposing themselves as AMD modules.",
+  "description": "Browserify plugin for avoiding that libraries register themselves as AMD modules.",
   "version": "0.1.0",
   "author": "iAdvize Team",
   "repository": {
