@@ -50,7 +50,7 @@ npm install --save amd-noconflictify
 var browserify = require('browserify');
 browserify()
   .add('./main.js')
-  .plugin('amd-noconflict')
+  .plugin('amd-noconflictify')
   .bundle();
 ```
 
