@@ -33,3 +33,41 @@ This plugin fixes it by disabling a possible detected AMD module loader environm
   }
 })();
 ```
+
+# Usage
+
+## Installation
+
+```
+npm install --save amd-noconflictify
+```
+
+## Configuration
+
+### via programmatic API
+
+```js
+var browserify = require('browserify');
+browserify()
+  .add('./main.js')
+  .plugin('amd-noconflict')
+  .bundle();
+```
+
+### via command line
+
+```shell
+$ browserify main.js -p [amd-noconflictify] > bundle.js
+```
+
+# Options
+
+There is no options.
+
+# License
+
+MIT
+
+# Changelog
+
+* 0.1.0 - Initial version.
