@@ -1,8 +1,8 @@
 'use strict';
 
 var through = require('through2');
-var prefix = '(function(undefined){if(typeof define==="function"&&define.amd){var idzPreviousDefine=define;define=undefined;}';
-var suffix = 'if(idzPreviousDefine)define=idzPreviousDefine;})();';
+var prefix = '(function(undefined){if(typeof define==="function"&&define.amd){var __amdnoconflictify__=define;define=undefined;}';
+var suffix = 'if(__amdnoconflictify__)define=__amdnoconflictify__;})();';
 
 /**
  * Create a stream that wrap the input between a prefix and a suffix string.
