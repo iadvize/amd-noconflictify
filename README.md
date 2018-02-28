@@ -19,6 +19,8 @@ In the precise case where those pages will expose an AMD module loader environme
 
 This plugin fixes it by disabling a possible detected AMD module loader environment before your bundle code execute. It does so by wrapping your bundle inside some "noConflict" code.
 
+## Examples
+
 ```js
 (function(undefined) {
   if (typeof define === 'function' && define.amd) {
@@ -34,17 +36,17 @@ This plugin fixes it by disabling a possible detected AMD module loader environm
 })();
 ```
 
-# Usage
+## Install
 
-## Installation
-
-```
+```javascript
 npm install --save amd-noconflictify
 ```
 
-## Configuration
+## Documentation
 
-### via programmatic API
+### Configuration
+
+#### via programmatic API
 
 ```js
 var browserify = require('browserify');
@@ -54,20 +56,12 @@ browserify()
   .bundle();
 ```
 
-### via command line
+#### via command line
 
 ```shell
 $ browserify main.js -p [amd-noconflictify] > bundle.js
 ```
 
-## Options
+## Contribute
 
-There is no options.
-
-# License
-
-MIT
-
-# Changelog
-
-* 0.1.0 - Initial version.
+Look at contribution guidelines here : [CONTRIBUTING.md](CONTRIBUTING.md)
